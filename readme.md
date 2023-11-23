@@ -1,11 +1,12 @@
 ### 진행 시 참고 사항
 
-1. 모든 코드 작성은 타입스크립트를 사용합니다.
-2. 환경은 selenium으로 되어있으나 selenium 함수는 사용하지 않습니다.
-3. 빌드는 'npm run build', 실행은 'node ./dist/index.js' 로 합니다.
-4. 작업은 tutorial 패키지 내부에서만 진행합니다.
-5. index.ts 및 lib 패키지의 Browser.ts는 변경하지 않습니다.
-6. TutorialController를 제외한 tutorial 패키지 내 모든 구현은 class를 활용합니다.
+1. 화면 구현 및 동작은 interview.pdf 파일을 참조하세요.
+2. 모든 코드 작성은 타입스크립트를 사용합니다.
+3. 환경은 selenium으로 되어있으나 selenium 함수는 사용하지 않습니다.
+4. 빌드는 'npm run build', 실행은 'node ./dist/index.js' 로 합니다.
+5. 작업은 tutorial 패키지 내부에서만 진행합니다.
+6. index.ts 및 lib 패키지의 Browser.ts는 변경하지 않습니다.
+7. TutorialController를 제외한 tutorial 패키지 내 모든 구현은 class를 활용합니다.
 
 ### 요구사항
 
