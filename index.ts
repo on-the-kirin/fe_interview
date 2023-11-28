@@ -49,6 +49,11 @@ async function executeScriptFromFile(driver: WebDriver, filePath: string) {
       });
     });
 
+  // 로그인 후 스토어 진입시 js 실행
+  await browser.wait(urlIs("https://app.keepgrow.com/admin/store")).then(() => {
+    executeScriptFromFile(browser, "./dist/tutorial.js");
+  });
+
   // 클릭을 통한 페이지 진입 시, 브라우저 종료
   await browser
     .wait(urlContains("https://app.keepgrow.com/admin/processes"))
