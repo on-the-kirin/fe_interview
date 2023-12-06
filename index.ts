@@ -19,9 +19,11 @@ async function executeScriptFromFile(driver: WebDriver, filePath: string) {
   const browser = await new Browser().build();
 
   // 최초 실행
-  await browser.get("https://app.keepgrow.com/admin/landing-info/114").then(() => {
-    executeScriptFromFile(browser, "./dist/tutorial.js");
-  });
+  await browser
+    .get("https://app.keepgrow.com/admin/landing-info/114")
+    .then(() => {
+      executeScriptFromFile(browser, "./dist/tutorial.js");
+    });
 
   // 유저 이벤트 클릭
   await browser
@@ -31,7 +33,9 @@ async function executeScriptFromFile(driver: WebDriver, filePath: string) {
     })
     .then(async () => {
       await browser.sleep(10000).then(() => {
-        browser.findElement({ xpath: '//*[@id="topbar"]/div[2]/div[2]/button[2]' }).click();
+        browser
+          .findElement({ xpath: '//*[@id="topbar"]/div[2]/div[2]/button[2]' })
+          .click();
       });
     });
 
@@ -43,9 +47,15 @@ async function executeScriptFromFile(driver: WebDriver, filePath: string) {
     })
     .then(async () => {
       await browser.sleep(10000).then(() => {
-        browser.findElement({ xpath: '//*[@id="username"]' }).sendKeys("fe_interview@uneedcomms.com");
-        browser.findElement({ xpath: '//*[@id="password"]' }).sendKeys("welcome123");
-        browser.findElement({ xpath: '//*[@id="signInForm"]/div/div[5]/button' }).click();
+        browser
+          .findElement({ xpath: '//*[@id="username"]' })
+          .sendKeys("fe_interview@uneedcomms.com");
+        browser
+          .findElement({ xpath: '//*[@id="password"]' })
+          .sendKeys("welcome123");
+        browser
+          .findElement({ xpath: '//*[@id="signInForm"]/div/div[5]/button' })
+          .click();
       });
     });
 

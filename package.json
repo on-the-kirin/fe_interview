@@ -9,6 +9,7 @@
   "author": "Jake",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "i": "^0.3.7",
     "ts-loader": "^9.5.1",
     "typescript": "^5.2.2",
     "webpack": "^5.89.0",
